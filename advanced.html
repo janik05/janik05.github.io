@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>dvancedSearch</title>
+        <link rel="stylesheet" href="stylegoogle.css">
+
+        <style>
+           
+            li {
+                font-size: 25px;
+            }
+            #felder{
+                align-items: center;
+            }
+            form input[type="advancedsubmit"] {
+                width: 130px;
+                background-color: #4caf50; /* Hintergrundfarbe des Buttons */
+                color: white; /* Textfarbe des Buttons */
+                padding: 12.5px 20px; 
+                border: none; 
+                cursor: pointer; 
+                
+            }
+            form input[type="advancedtext"] {
+                width: 350px; /* Breite des Textfelds */
+                padding: 10px; /* Innenabstand des Textfelds */
+                border: 1px solid #ccc; /* Rahmen um das Textfeld */
+                font-size: 16px; /* Schriftgröße */
+                color: #333; /* Textfarbe */
+                margin: 0;
+                }
+            label {
+                margin-bottom: 5px;
+                align-items: flex-start; 
+            }
+            input {
+            padding: 8px;
+            margin-bottom: 10px;
+            }
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                 /* Änderung: Labels am linken Rand ausrichten */
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            
+            <h1>Balken </h1>
+            <nav>
+                
+                <li>
+                    <a href="https://images.google.com/" target="_blank" rel="noopener noreferrer">
+                        <img class="card-img-top" src="/Users/janik/WEb2/googleimage.jpeg" alt="googleimage">
+                    </a>
+                </li>
+                <li><a href="https://www.google.de/advanced_search">Google Advanced</a></li>
+                
+            </nav>
+        </header>
+    
+        <form action="https://www.google.com/search">
+            <div id="googlelogo">
+                <img src="/Users/janik/WEb2/googlebilder.jpeg" alt=" google" width="300">
+            </div>  
+                <div id="search-container">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="advancedtext" name="as_q" class="form-control" placeholder="Find pages with… “all these words:”" aria-label="Find pages with… “all these words:”" aria-describedby="basic-addon1">
+                      </div>
+                      
+                      <div class="input-group mb-3">
+                        <input type="advancedtext" name="as_epq"class="form-control" placeholder="Find pages with… “this exact word or phrase:”" aria-label="Find pages with… “this exact word or phrase:" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        </div>
+                      </div>
+                      
+                      <label for="basic-url">Your vanity URL</label>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" name="as_oq" id="basic-addon3">https://example.com/users/</span>
+                        </div>
+                        <input type="advancedtext" class="form-control" placeholder="Find pages with… “any of these words:””" aria-label="Find pages with… “any of these words:”" id="basic-url" aria-describedby="basic-addon3">
+                      </div>
+                      
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">$</span>
+                        </div>
+                        <input type="advancedtext" name="as_eq" class="form-control" placeholder="Find pages with… “none of these words:”" aria-label="Find pages with… “none of these words:"aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append">
+                          <span class="input-group-text">.00</span>
+                        </div>
+                      </div>
+                      
+                      
+                <input type="submit" value="Google Search">
+            </div>
+        </form>
+
+        
+
+
+    </body>
+</html>

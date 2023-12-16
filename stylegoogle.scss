@@ -1,0 +1,101 @@
+header {
+    background-color: #333333; /* Hintergrundfarbe des Balkens */
+    color: white; /* Textfarbe des Balkens */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    overflow: auto;
+}
+body{
+    color: white;
+
+}
+
+h1{
+    text-align: left;
+    color: #3498db; /* Beispiel-Farbe - du kannst dies anpassen */
+    text-shadow: 2px 2px 4px #000000; 
+    flex-grow: 1;
+}
+nav {
+    margin-left: auto;
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+nav li {
+    margin-left: 15px;
+}
+nav a {
+    color: #617c00; 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    color: #c4126b; /* Farbe ändern, wenn der Link überfahren wird (kann nach Bedarf angepasst werden) */
+}
+
+
+.card-img-top {
+    width: 10%;
+    float: right;
+    
+
+    /* Weitere Stilregeln hier */
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 70vh; 
+    flex-direction: column;
+    margin: 0;
+}
+
+
+form input[type="text"] {
+    width: 350px; /* Breite des Textfelds */
+    padding: 10px; /* Innenabstand des Textfelds */
+    border: 1px solid #ccc; /* Rahmen um das Textfeld */
+    border-top-left-radius: 20px; /* Abgerundete Ecken */
+    border-bottom-left-radius: 20px;
+    font-size: 16px; /* Schriftgröße */
+    color: #333; /* Textfarbe */
+    margin: 0;
+    
+    
+}
+form input[type="submit"] {
+    width: 130px;
+    background-color: #4caf50; /* Hintergrundfarbe des Buttons */
+    color: white; /* Textfarbe des Buttons */
+    padding: 12.5px 20px; /* Innenabstand des Buttons */
+    border: none; /* Kein Rahmen um den Button */
+    cursor: pointer; /* Ändert den Cursor bei Hover */
+    border-top-right-radius: 20px; /* Abgerundete Ecken */
+    border-bottom-right-radius: 20px;
+    margin: 0;
+}
+
+#googlelogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Höhe nach Bedarf anpassen */
+    margin-top: 20px;
+}
+
+#googlelogo img {
+    width: 500px; /* Breite des Bildes anpassen */
+    /*border-radius: 40%;  Rundes Bild */
+}
+div#googlelogo{
+    width: 300px;
+    height: 200px;
+}
